@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aya Abdalla Mohamed | n8n &amp; Automation Specialist Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Aya Abdalla Mohamed - Detail-oriented n8n &amp; Automation Specialist, Python Developer, and AI Workflow Integrator.">
+  <meta name="author" content="Aya Abdalla Mohamed">
+
+  <!-- Favicon Icon -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2389CFF0'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='60' font-family='sans-serif' fill='white'%3EAA%3C/text%3E%3C/svg%3E">
+  <!-- Google Fonts: Plus Jakarta Sans, Cairo & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Animated Lighting & Grid -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="siteLogo">
+        <div class="logo-badge">⚡</div>
+        <div class="logo-text">Aya<span>Abdalla</span></div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" data-i18n="navAbout" id="navLinkAbout">نبذة عني</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="navSkills" id="navLinkSkills">المهارات</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="navProjects" id="navLinkProjects">معرض الأعمال</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="navExperience" id="navLinkExperience">الخبرة
+              والتعليم</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="navContact" id="navLinkContact">تواصل معي</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button type="button" class="lang-btn" id="langToggleBtn" aria-label="Toggle Language">
+          🌐 English
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="btnContact" id="navContactCta">تواصل معي</a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Hero Text Column -->
+          <div class="hero-content">
+
+
+            <h1 class="hero-title">
+              <span class="gradient-text">Aya Abdalla Mohamed</span>
+            </h1>
+
+            <div class="hero-subtitle">
+              <span id="dynamicRoleText">أخصائية أتمتة العمليات وبناء مسارات n8n</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <p class="hero-bio" data-i18n="heroBio">
+              أخصائية n8n وأتمتة العمليات مع أساس تقني متين في منطق سير العمل، وواجهات برمجة التطبيقات REST APIs، وتحليل
+              بيانات JSON، وبرمجة Python. أسعى لتوظيف خبرتي العملية في ربط أدوات الذكاء الاصطناعي وأنظمة إدارة علاقات
+              العملاء (CRM) لأتمتة عمليات الأعمال ورفع الكفاءة التشغيلية.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" data-i18n="btnExploreProjects" id="heroExploreCta">
+                <span>🚀</span> استعراض المشاريع
+              </a>
+              <a href="#contact" class="btn btn-secondary" data-i18n="btnContact" id="heroContactCta">
+                <span>💬</span> تواصل معي
+              </a>
+              <button type="button" class="btn btn-secondary" data-copy-target="AyaAbdalla410@gmail.com"
+                id="heroCopyEmail">
+                <span>📋</span> AyaAbdalla410@gmail.com
+              </button>
+            </div>
+
+            <!-- Meta Quick Details -->
+            <div class="hero-meta-list">
+              <div class="hero-meta-item">
+                <span style="color:var(--accent-n8n);">📍</span>
+                <span>Mansoura, Dakahlia</span>
+              </div>
+              <div class="hero-meta-item">
+                <span style="color:var(--accent-cyan);">📞</span>
+                <a href="tel:+201066599456" style="color:inherit; text-decoration:none;">+201066599456</a>
+              </div>
+              <div class="hero-meta-item">
+                <span style="color:#10b981;">✈️</span>
+                <span>Willing to travel 100%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Automation Visual Simulation -->
+          <div class="hero-visual">
+            <div class="hero-card-main">
+              <div class="card-header-bar">
+                <div class="card-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <span class="badge badge-n8n">n8n Execution Engine v2.4</span>
+              </div>
+
+              <div class="tech-node-flow">
+                <!-- Node 1 -->
+                <div class="node-item">
+                  <div class="node-left">
+                    <div class="node-icon" style="background:rgba(234,75,113,0.15); color:var(--accent-n8n);">⚡</div>
+                    <div class="node-info">
+                      <h4>Webhook Trigger</h4>
+                      <p>Inbound Omni-Channel API</p>
+                    </div>
+                  </div>
+                  <span class="node-status-indicator">● Active</span>
+                </div>
+
+                <!-- Node 2 -->
+                <div class="node-item">
+                  <div class="node-left">
+                    <div class="node-icon" style="background:rgba(139,92,246,0.15); color:var(--accent-purple);">✦</div>
+                    <div class="node-info">
+                      <h4>Gemini LLM Reasoning</h4>
+                      <p>Intent &amp; Sentiment Analysis</p>
+                    </div>
+                  </div>
+                  <span class="node-status-indicator">⚡ 240ms</span>
+                </div>
+
+                <!-- Node 3 -->
+                <div class="node-item">
+                  <div class="node-left">
+                    <div class="node-icon" style="background:rgba(249,115,22,0.15); color:#f97316;">🔄</div>
+                    <div class="node-info">
+                      <h4>HubSpot CRM Sync</h4>
+                      <p>Real-time Ticket &amp; Contact Sync</p>
+                    </div>
+                  </div>
+                  <span class="node-status-indicator">✓ Synced</span>
+                </div>
+
+                <!-- Node 4 -->
+                <div class="node-item">
+                  <div class="node-left">
+                    <div class="node-icon" style="background:rgba(16,185,129,0.15); color:#10b981;">🐍</div>
+                    <div class="node-info">
+                      <h4>Python Text Sanitizer</h4>
+                      <p>Data Parsing &amp; JSON Mapping</p>
+                    </div>
+                  </div>
+                  <span class="node-status-indicator">100% Valid</span>
+                </div>
+              </div>
+
+              <!-- Floating Stat Card -->
+              <div class="floating-stat">
+                <div class="stat-icon">🛡️</div>
+                <div>
+                  <div class="stat-title" data-i18n="statReliability">موثوقية العمليات</div>
+                  <div class="stat-val">100% Reliable</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & OBJECTIVE SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="aboutTag">نبذة مهنية</span>
+          <h2 class="section-title"><span data-i18n="aboutTitle">الهدف والبيانات الشخصية</span></h2>
+          <p class="section-desc">A detail-oriented specialist dedicated to workflow excellence and AI automation.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card 1: Career Objective -->
+          <div class="about-card">
+            <div class="card-title-icon">
+              <span>🎯</span>
+              <h3 data-i18n="objTitle">الهدف الوظيفي (Objective)</h3>
+            </div>
+            <p class="objective-text">
+              <strong class="highlight-tag">Detail-oriented n8n &amp; Automation Specialist</strong> with a strong
+              foundation in <span class="highlight-tag">workflow logic</span>, <span class="highlight-tag">REST
+                APIs</span>, <span class="highlight-tag">JSON parsing</span>, and <span
+                class="highlight-tag">Python</span>. Seeking to leverage hands-on project experience in integrating AI
+              tools and CRMs to automate business processes and enhance operational efficiency.
+            </p>
+            <div
+              style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; display: flex; gap: 0.6rem; flex-wrap: wrap;">
+              <span class="badge badge-cyan">Workflow Logic</span>
+              <span class="badge badge-n8n">REST APIs</span>
+              <span class="badge badge-status">JSON Parsing</span>
+              <span class="badge badge-cyan">Python Scripting</span>
+              <span class="badge badge-n8n">CRM &amp; AI Integration</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Personal Information -->
+          <div class="about-card">
+            <div class="card-title-icon">
+              <span>👤</span>
+              <h3 data-i18n="personalTitle">المعلومات الشخصية</h3>
+            </div>
+
+            <div class="personal-info-list">
+              <div class="info-row">
+                <span class="info-label"><span>👤</span> الاسم</span>
+                <span class="info-val">Aya Abdalla Mohamed</span>
+              </div>
+
+              <div class="info-row">
+                <span class="info-label"><span data-i18n="lblMobile">رقم الهاتف</span></span>
+                <span class="info-val">
+                  <a href="tel:+201066599456" style="color:var(--accent-cyan); text-decoration:none;">+201066599456</a>
+                  <button type="button" class="copy-btn" data-copy-target="+201066599456" title="Copy Phone Number"
+                    aria-label="Copy phone number">📋</button>
+                  <a href="https://wa.me/201066599456" target="_blank" rel="noopener" class="copy-btn"
+                    title="Chat on WhatsApp" style="color:#25d366;" aria-label="WhatsApp">💬</a>
+                </span>
+              </div>
+
+              <div class="info-row">
+                <span class="info-label"><span data-i18n="lblEmail">البريد الإلكتروني</span></span>
+                <span class="info-val">
+                  <a href="mailto:AyaAbdalla410@gmail.com"
+                    style="color:var(--accent-cyan); text-decoration:none;">AyaAbdalla410@gmail.com</a>
+                  <button type="button" class="copy-btn" data-copy-target="AyaAbdalla410@gmail.com" title="Copy Email"
+                    aria-label="Copy email">📋</button>
+                </span>
+              </div>
+
+              <div class="info-row">
+                <span class="info-label"><span data-i18n="lblAddress">العنوان</span></span>
+                <span class="info-val" data-i18n="valAddress">Mansoura, Dakahlia</span>
+              </div>
+
+              <div class="info-row">
+                <span class="info-label"><span data-i18n="lblMobility">السفر والتنقل</span></span>
+                <span class="info-val" style="color:#34d399;" data-i18n="valMobility">Willing to travel 100%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" style="background: rgba(13, 18, 34, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skillsTag">الخبرات التقنية</span>
+          <h2 class="section-title"><span data-i18n="skillsTitle">المهارات والأدوات الأساسية</span></h2>
+          <p class="section-desc">Comprehensive toolkit across workflow logic, coding, API integrations, and AI.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Workflow Automation & Integration -->
+          <div class="skill-category-card">
+            <div class="skill-card-head">
+              <div class="skill-head-icon icon-flow">⚡</div>
+              <h3 data-i18n="cat1Title">أتمتة العمليات والتكامل (Workflow Automation)</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip"><span>⚙️</span> n8n</span>
+              <span class="skill-chip"><span>🌐</span> REST APIs</span>
+              <span class="skill-chip"><span>🔗</span> Webhooks</span>
+              <span class="skill-chip"><span>📄</span> JSON Data Parsing</span>
+              <span class="skill-chip"><span>🗺️</span> Data Mapping</span>
+              <span class="skill-chip"><span>🐞</span> Error Handling &amp; Debugging</span>
+            </div>
+          </div>
+
+          <!-- 2. Programming & Scripting -->
+          <div class="skill-category-card">
+            <div class="skill-card-head">
+              <div class="skill-head-icon icon-code">🐍</div>
+              <h3 data-i18n="cat2Title">البرمجة والتطوير (Programming &amp; Scripting)</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip"><span>🐍</span> Python</span>
+              <span class="skill-chip"><span>📊</span> Data Manipulation</span>
+              <span class="skill-chip"><span>💻</span> Basic Scripting</span>
+              <span class="skill-chip"><span>🧩</span> Logic Building</span>
+              <span class="skill-chip"><span>🔍</span> Regular Expressions (RegEx)</span>
+              <span class="skill-chip"><span>⚡</span> Payload Formatting</span>
+            </div>
+          </div>
+
+          <!-- 3. Tools & Platforms Integration -->
+          <div class="skill-category-card">
+            <div class="skill-card-head">
+              <div class="skill-head-icon icon-ai">🤖</div>
+              <h3 data-i18n="cat3Title">دمج الأدوات والمنصات (Tools &amp; Integration)</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip"><span>✨</span> AI Services (Gemini API)</span>
+              <span class="skill-chip"><span>🧠</span> Meta AI / LLM APIs</span>
+              <span class="skill-chip"><span>💼</span> CRM Systems (HubSpot)</span>
+              <span class="skill-chip"><span>📁</span> Google Workspace Tools</span>
+              <span class="skill-chip"><span>🗄️</span> Databases (Postgres, Airtable)</span>
+              <span class="skill-chip"><span>💬</span> Messaging (Telegram, WhatsApp)</span>
+            </div>
+          </div>
+
+          <!-- 4. Core Technical Concepts -->
+          <div class="skill-category-card">
+            <div class="skill-card-head">
+              <div class="skill-head-icon icon-sys">💡</div>
+              <h3 data-i18n="cat4Title">المفاهيم التقنية المتقدمة (Core Technical Concepts)</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip"><span>📐</span> Workflow Logic Design</span>
+              <span class="skill-chip"><span>🚀</span> Business Process Automation</span>
+              <span class="skill-chip"><span>🔄</span> System Integration</span>
+              <span class="skill-chip"><span>🛠️</span> Troubleshooting &amp; Resilience</span>
+              <span class="skill-chip"><span>⏱️</span> Latency &amp; Rate Limit Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages Box -->
+        <div class="languages-banner">
+          <div class="lang-item">
+            <div class="lang-flag">🌐</div>
+            <div class="lang-info">
+              <h4 data-i18n="langTitle">اللغات المتقنة</h4>
+              <p>Professional communication and technical articulation</p>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:2.5rem; flex-wrap:wrap;">
+            <div class="lang-item">
+              <span style="font-size:1.5rem;">🇪🇬</span>
+              <div class="lang-info">
+                <h4>العربية (Arabic)</h4>
+                <p data-i18n="langAr">اللغة الأم (Mother Tongue)</p>
+              </div>
+            </div>
+
+            <div class="lang-item">
+              <span style="font-size:1.5rem;">🇬🇧</span>
+              <div class="lang-info">
+                <h4>الإنجليزية (English)</h4>
+                <p data-i18n="langEn">Upper-Intermediate (TOEFL ITP Score: 523)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION (معرض الأعمال)
+         - Exactly 2 projects
+         - High visual aesthetic cards
+         - Images loaded from projects/ directory
+         - Fullscreen modal lightbox on click with dark backdrop & ESC close
+         - Two action buttons: View Code (كود) and Live Demo (عرض حي)
+         ========================================================================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projectsTag">معرض الأعمال</span>
+          <h2 class="section-title"><span data-i18n="projectsTitle">المشاريع المميزة (Projects)</span></h2>
+          <p class="section-desc" data-i18n="projectsDesc">معرض يبرز نماذج حقيقية لمسارات عمل تم بناؤها باستخدام n8n
+            ودمج الذكاء الاصطناعي وPython.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: AI Customer Service Bot with n8n -->
+          <article class="project-card" id="projectCard1">
+            <!-- Clickable Media Gallery Container for Fullscreen Lightbox -->
+            <div class="project-media-wrapper" data-lightbox-trigger data-full-src="projects/customer-service-bot.svg"
+              data-project-title="AI Customer Service Bot with n8n"
+              data-project-caption="Full Resolution n8n Workflow Architecture: Multi-Channel Webhook, Gemini LLM Agent & HubSpot CRM Sync"
+              tabindex="0" role="button" aria-label="Open Project 1 image in full resolution fullscreen lightbox">
+              <img src="projects/customer-service-bot.svg"
+                alt="بناء بوت خدمة عملاء باستخدام n8n - AI Customer Service Bot" class="project-img" loading="lazy">
+              <div class="project-zoom-overlay">
+                <div class="zoom-icon-circle">🔍</div>
+                <div class="zoom-hint-text" data-i18n="zoomHint">اضغط لعرض الصورة بالحجم الكامل وملء الشاشة</div>
+                <span class="badge badge-n8n">Full Resolution • 1080p Vector</span>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="project-content">
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 01</span>
+                <span class="badge badge-n8n">n8n + AI Agent</span>
+              </div>
+
+              <h3 class="project-title" data-i18n="p1Title">بناء بوت خدمة عملاء ذكي باستخدام n8n</h3>
+
+              <p class="project-desc" data-i18n="p1Desc">
+                نظام أتمتة شامل لبوت خدمة عملاء متعدد القنوات (WhatsApp، Telegram، والمحادثة المباشرة)، مدعوم بنماذج
+                الذكاء الاصطناعي LLM للرد الذكي، والربط المباشر مع HubSpot CRM لتسجيل ومتابعة التذاكر تلقائياً.
+              </p>
+
+              <ul class="project-features">
+                <li>استقبال الرسائل اللحظية عبر Webhook ومعالجة سريعة بزمن 240ms.</li>
+                <li>تصنيف نية المستخدم (Intent Classification) والردود الذكية بنماذج Gemini LLM.</li>
+                <li>تحديث ملف العميل وفتح تذكرة دعم في HubSpot CRM بشكل آلي.</li>
+                <li>نظام تحويل ذكي للموظف البشري في حال تدني تقييم المشاعر (Sentiment).</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span>n8n Workflows</span>
+                <span>Gemini 1.5 LLM</span>
+                <span>HubSpot CRM</span>
+                <span>REST APIs</span>
+                <span>Webhooks</span>
+                <span>JSON Parsing</span>
+              </div>
+
+              <!-- Two Action Buttons: View Code & Live Demo -->
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary" data-code-project="1" id="btnCodeProject1">
+                  <span>💻</span> <span data-i18n="btnViewCode">عرض الكود</span>
+                </button>
+                <button type="button" class="btn btn-primary" data-demo-project="1" id="btnDemoProject1">
+                  <span>▶️</span> <span data-i18n="btnLiveDemo">معاينة حية (Live Demo)</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: News Aggregator, AI Summarizer & Keyphrase Extractor -->
+          <article class="project-card" id="projectCard2">
+            <!-- Clickable Media Gallery Container for Fullscreen Lightbox -->
+            <div class="project-media-wrapper" data-lightbox-trigger data-full-src="projects/news-ai-summarizer.svg"
+              data-project-title="News Aggregator, AI Summarizer & Keyphrase Extractor"
+              data-project-caption="Full Resolution n8n Workflow Architecture: Scheduled Cron Ingestion, Python Sanitization & LLM Keyword Extraction"
+              tabindex="0" role="button" aria-label="Open Project 2 image in full resolution fullscreen lightbox">
+              <img src="projects/news-ai-summarizer.svg"
+                alt="جمع المقالات والأخبار وتلخيصها واستخراج الكلمات المفتاحية باستخدام n8n وPython" class="project-img"
+                loading="lazy">
+              <div class="project-zoom-overlay">
+                <div class="zoom-icon-circle">🔍</div>
+                <div class="zoom-hint-text" data-i18n="zoomHint">اضغط لعرض الصورة بالحجم الكامل وملء الشاشة</div>
+                <span class="badge badge-cyan">Full Resolution • 1080p Vector</span>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="project-content">
+              <div class="project-top-meta">
+                <span class="project-number">PROJECT 02</span>
+                <span class="badge badge-cyan">Python + NLP Pipeline</span>
+              </div>
+
+              <h3 class="project-title" data-i18n="p2Title">جمع المقالات والأخبار وتلخيصها واستخراج الكلمات المفتاحية
+              </h3>
+
+              <p class="project-desc" data-i18n="p2Desc">
+                مسار عمل آلي بالكامل يبدأ بجدولة دورية لجلب الأخبار والمقالات من مواقع محددة، وتنظيفها عبر كود Python،
+                ثم تلخيصها بذكاء اصطناعي في 3 نقاط محددة واستخراج الكلمات المفتاحية الأكثر أهمية وتخزينها.
+              </p>
+
+              <ul class="project-features">
+                <li>مجدول زمني تلقائي (Cron Trigger) لجلب وتفريغ RSS Feeds ومحتوى المواقع المستهدفة.</li>
+                <li>كود Python لتنقية HTML وتصفية الإعلانات واستخراج النص الأساسي.</li>
+                <li>تلخيص مجرد بنماذج LLM يقلص حجم المقال بنسبة 95% مع الحفاظ على الأفكار الجوهرية.</li>
+                <li>استخراج تلقائي لأهم 5 كلمات مفتاحية وحفظ المخرجات في قاعدة البيانات وقنوات التنبيه.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span>n8n Cron</span>
+                <span>Python (bs4 / re)</span>
+                <span>Gemini API</span>
+                <span>Keyphrase Extraction</span>
+                <span>HTTP Requests</span>
+                <span>PostgreSQL / Notion</span>
+              </div>
+
+              <!-- Two Action Buttons: View Code & Live Demo -->
+              <div class="project-actions">
+                <button type="button" class="btn btn-secondary" data-code-project="2" id="btnCodeProject2">
+                  <span>💻</span> <span data-i18n="btnViewCode">عرض الكود</span>
+                </button>
+                <button type="button" class="btn btn-cyan" data-demo-project="2" id="btnDemoProject2">
+                  <span>▶️</span> <span data-i18n="btnLiveDemo">معاينة حية (Live Demo)</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section id="experience" style="background: rgba(13, 18, 34, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="expTag">المسيرة المهنية</span>
+          <h2 class="section-title"><span data-i18n="expTitle">الخبرات العملية والتعليم</span></h2>
+          <p class="section-desc">Hands-on workflow automation engineering and strong academic foundation.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+
+          <!-- Experience 1: DEPI -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role" data-i18n="depiRole">متدربة أتمتة وتطوير برمجيات (Automation &amp; Software
+                    Trainee)</h3>
+                  <div class="timeline-org" data-i18n="depiOrg">Digital Egypt Pioneers Initiative (DEPI) | Present</div>
+                </div>
+                <span class="timeline-badge">Present / حالياً</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Designing and testing end-to-end automated workflows using n8n, integrating disparate tools via REST
+                  APIs and Webhooks.</li>
+                <li>Writing Python scripts for data manipulation, custom logic, and preparing payload structures for
+                  workflow nodes.</li>
+                <li>Building functional automation pipelines that incorporate AI tools (e.g., LLMs), CRM integrations,
+                  and Google Workspace applications.</li>
+                <li>Debugging execution logs, handling JSON data structures, and optimizing error-handling mechanisms
+                  for stable workflow performance.</li>
+                <li>Collaborating on hands-on practical assignments and real-world simulation projects to enhance
+                  business process efficiency.</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span>n8n</span>
+                <span>REST APIs</span>
+                <span>Webhooks</span>
+                <span>Python Scripting</span>
+                <span>LLM Pipelines</span>
+                <span>JSON Debugging</span>
+                <span>HubSpot CRM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education 1: Mansoura University Veterinary Medicine -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="border-color: var(--accent-cyan);"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Bachelor’s Degree of Veterinary Medicine</h3>
+                  <div class="timeline-org">Mansoura University</div>
+                </div>
+                <span class="timeline-badge">09/2018 – 07/2023</span>
+              </div>
+
+              <p style="color: var(--text-secondary); margin-top: 0.5rem;" data-i18n="edu1Grade">
+                Grade: Very Good with honors [79.7%] (جيد جداً مع مرتبة الشرف)
+              </p>
+            </div>
+          </div>
+
+          <!-- Education 2: Diploma in Biochemistry -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="border-color: var(--accent-purple);"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Diploma in Biochemistry</h3>
+                  <div class="timeline-org">Mansoura University</div>
+                </div>
+                <span class="timeline-badge">02/2024 – 10/2024</span>
+              </div>
+
+              <p style="color: var(--text-secondary); margin-top: 0.5rem;">
+                Advanced analytical thinking, biological data handling, and scientific methodology.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contactTag">تواصل مهني</span>
+          <h2 class="section-title"><span data-i18n="contactTitle">لنبدأ العمل معاً</span></h2>
+          <p class="section-desc" data-i18n="contactDesc">هل تبحث عن بناء مسارات عمل مؤتمتة ذكية ترفع كفاءة شركتك؟
+            يسعدني التواصل ومناقشة الفرص.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Channels -->
+          <div class="contact-card-info">
+            <h3>Get in Touch Directly</h3>
+            <p>I am open for full-time roles, automation consultations, and workflow implementation projects with 100%
+              willingness to travel.</p>
+
+            <div class="contact-channels">
+              <a href="mailto:AyaAbdalla410@gmail.com" class="channel-item">
+                <div class="channel-icon channel-email">✉️</div>
+                <div class="channel-meta">
+                  <h4>Email Me</h4>
+                  <p>AyaAbdalla410@gmail.com</p>
+                </div>
+              </a>
+
+              <a href="tel:+201066599456" class="channel-item">
+                <div class="channel-icon channel-phone">📞</div>
+                <div class="channel-meta">
+                  <h4>Phone Call</h4>
+                  <p>+201066599456</p>
+                </div>
+              </a>
+
+              <a href="https://wa.me/201066599456" target="_blank" rel="noopener" class="channel-item">
+                <div class="channel-icon" style="background:rgba(37,211,102,0.15); color:#25d366;">💬</div>
+                <div class="channel-meta">
+                  <h4>WhatsApp Chat</h4>
+                  <p>+201066599456 (Instant Reply)</p>
+                </div>
+              </a>
+
+              <div class="channel-item">
+                <div class="channel-icon channel-location">📍</div>
+                <div class="channel-meta">
+                  <h4>Location &amp; Mobility</h4>
+                  <p>Mansoura, Dakahlia (Willing to travel 100%)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Simulation -->
+          <div class="contact-form-box">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="userName" class="form-label" data-i18n="formName">الاسم بالكامل</label>
+                <input type="text" id="userName" class="form-control" placeholder="e.g. John Doe / أحمد علي" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label" data-i18n="formEmail">البريد الإلكتروني</label>
+                <input type="email" id="userEmail" class="form-control" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label" data-i18n="formMsg">الرسالة</label>
+                <textarea id="userMessage" class="form-control" placeholder="Describe your workflow or opportunity..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;" id="contactSubmitBtn">
+                <span>🚀</span> <span data-i18n="formSend">إرسال الرسالة</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-text" data-i18n="footerText">
+        جميع الحقوق محفوظة © آية عبد الله محمد • متخصصة أتمتة وn8n
+      </div>
+      <a href="#hero" class="footer-back-top" data-i18n="backToTop">
+        العودة للأعلى ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FULLSCREEN IMAGE LIGHTBOX MODAL (Full Resolution, Dark Backdrop, ESC Close)
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Fullscreen Image View">
+    <!-- Top Bar Controls -->
+    <div class="lightbox-topbar">
+      <div class="lightbox-title-wrap">
+        <h3 class="lightbox-title" id="lightboxTitle">Project Architecture Preview</h3>
+        <span class="lightbox-esc-hint">ESC للإغلاق</span>
+      </div>
+
+      <div class="lightbox-controls">
+        <button type="button" class="lightbox-btn" id="lightboxZoomOut" title="Zoom Out"
+          aria-label="Zoom Out">－</button>
+        <button type="button" class="lightbox-btn" id="lightboxZoomReset" title="Reset Zoom"
+          aria-label="Reset Zoom">1:1</button>
+        <button type="button" class="lightbox-btn" id="lightboxZoomIn" title="Zoom In" aria-label="Zoom In">＋</button>
+        <button type="button" class="lightbox-btn" id="lightboxFullscreenBtn" title="Toggle Fullscreen"
+          aria-label="Toggle Fullscreen">⛶</button>
+        <!-- Distinct High-Contrast Close Button -->
+        <button type="button" class="lightbox-btn lightbox-btn-close" id="lightboxCloseBtn" title="Close (ESC)"
+          aria-label="Close Fullscreen Modal">✕</button>
+      </div>
+    </div>
+
+    <!-- Image Stage -->
+    <div class="lightbox-stage lightbox-backdrop-click-target">
+      <img src="" alt="Fullscreen Project Preview" class="lightbox-full-img" id="lightboxFullImg">
+    </div>
+
+    <!-- Caption at bottom -->
+    <div class="lightbox-caption" id="lightboxCaption">
+      <span>⚡</span> Full Resolution Architectural Diagram • Crisp Vector Display
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       INTERACTIVE CODE MODAL
+       ========================================================================== -->
+  <div class="interactive-modal" id="codeModal" role="dialog" aria-modal="true" aria-label="Project Code Inspection">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h3 id="modalCodeTitle">💻 Project Code Architecture</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close Modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="color:var(--text-secondary); margin-bottom: 0.8rem;">
+          Production-grade workflow definition and Python scripts. You can inspect or copy directly:
+        </p>
+
+        <div class="code-box-wrapper">
+          <div class="code-box-bar">
+            <span id="modalCodeFileName">workflow.json</span>
+            <button type="button" class="btn btn-secondary btn-sm" id="copyCodeBtn">📋 Copy Code</button>
+          </div>
+          <pre class="code-snippet-pre" id="modalCodeSnippet"></pre>
+        </div>
+
+        <div
+          style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Repository link: <a
+              href="https://github.com/AyaAbdalla410" target="_blank" rel="noopener"
+              style="color:var(--accent-cyan);">github.com/AyaAbdalla410</a></span>
+          <button type="button" class="btn btn-primary btn-sm modal-close-btn">Close Window</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       INTERACTIVE LIVE DEMO MODAL (Simulator for recruiters & clients)
+       ========================================================================== -->
+  <div class="interactive-modal" id="demoModal" role="dialog" aria-modal="true" aria-label="Live Demo Simulator">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h3 id="modalDemoTitle">▶️ Live Workflow Demonstration</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close Modal">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Area 1: Chatbot Simulation for Project 1 -->
+        <div id="demoChatArea" style="display:none;">
+          <p style="color:var(--text-secondary); margin-bottom:0.8rem;">
+            Test the live n8n AI Customer Support Bot workflow! Type a question below to see automated intent resolution
+            and CRM logging:
+          </p>
+
+          <div class="demo-simulation-box">
+            <div class="chat-sim-messages" id="simMessages">
+              <div class="sim-msg sim-msg-bot">
+                <strong>Aya's AI Bot:</strong> Hello! I am Aya's AI Customer Assistant powered by n8n workflows. I can
+                check order status, answer queries, or log tickets to HubSpot CRM! Try asking: "Can I track my order
+                #48291?" or "What are your services?"
+              </div>
+            </div>
+
+            <div class="sim-input-bar">
+              <input type="text" id="simChatInput" class="sim-input"
+                placeholder="Type your message here (e.g., track order, pricing, help)...">
+              <button type="button" class="btn btn-primary" id="simSendBtn">Send</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Area 2: News Summarizer Simulation for Project 2 -->
+        <div id="demoNewsArea" style="display:none;">
+          <p style="color:var(--text-secondary); margin-bottom:0.8rem;">
+            Experience the automated News Aggregation, Python Cleaning, and Gemini AI Summarization pipeline:
+          </p>
+
+          <div class="demo-simulation-box">
+            <div style="margin-bottom:1rem;">
+              <label style="display:block; font-size:0.85rem; color:#94a3b8; margin-bottom:0.4rem;">Select Sample News
+                Feed Source:</label>
+              <select id="sampleNewsSelect" class="form-control" style="background:#111827;">
+                <option value="tech">TechCrunch: "Enterprise Automation and Autonomous AI Agents in 2026"</option>
+                <option value="business">Bloomberg: "CRM Efficiency Gains with n8n and Generative AI Integrations"
+                </option>
+              </select>
+            </div>
+
+            <button type="button" class="btn btn-cyan" id="runSummarizerBtn" style="width:100%; margin-bottom:1rem;">
+              ⚡ Run n8n Summarization Pipeline
+            </button>
+
+            <div id="summarizerOutput">
+              <div style="padding:1rem; text-align:center; color:var(--text-muted); font-size:0.88rem;">
+                Click "Run n8n Summarization Pipeline" to execute the live demo.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notice" id="toastNotice">
+    <span>✓</span> تم النسخ بنجاح!
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

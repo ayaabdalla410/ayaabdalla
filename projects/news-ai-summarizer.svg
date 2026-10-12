@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c18"/>
+      <stop offset="50%" stop-color="#0c1322"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <!-- Node Gradients -->
+    <linearGradient id="nodeCronGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="nodePythonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <linearGradient id="nodeAiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+
+    <linearGradient id="nodeKeywordGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="nodeExportGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#192231" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0e1520" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <!-- Connectors -->
+    <linearGradient id="wireA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="wireB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="wireC" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="wireD" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <!-- Shadows & Filters -->
+    <filter id="drop2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Dot Grid -->
+    <pattern id="dotGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="1.2" fill="#334155" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad2)"/>
+  <rect width="1200" height="675" fill="url(#dotGrid)"/>
+
+  <!-- Ambient Glow -->
+  <circle cx="200" cy="220" r="170" fill="#38bdf8" opacity="0.07" filter="blur(60px)"/>
+  <circle cx="620" cy="200" r="210" fill="#8b5cf6" opacity="0.08" filter="blur(70px)"/>
+  <circle cx="1000" cy="300" r="190" fill="#10b981" opacity="0.07" filter="blur(60px)"/>
+
+  <!-- Top App Navigation / Title Bar -->
+  <g id="topbar2" filter="url(#drop2)">
+    <rect x="30" y="24" width="1140" height="56" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.2"/>
+    
+    <!-- n8n icon badge -->
+    <rect x="48" y="36" width="32" height="32" rx="8" fill="url(#nodePythonGrad)"/>
+    <path d="M54 48 h20 M54 53 h14 M54 58 h18" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <text x="92" y="52" fill="#f8fafc" font-family="'Segoe UI', -apple-system, sans-serif" font-weight="700" font-size="16">n8n Workflow • News Aggregator, AI Summarizer &amp; Keyphrase Extractor</text>
+    <text x="92" y="68" fill="#94a3b8" font-family="'Segoe UI', -apple-system, sans-serif" font-weight="500" font-size="12">Scheduled Ingestion • Python Text Sanitizer • Gemini AI Summarization • NLP Keywords • Multi-Channel Delivery</text>
+    
+    <!-- Status Badges -->
+    <rect x="915" y="38" width="115" height="28" rx="14" fill="#0c4a6e" stroke="#0284c7" stroke-width="1"/>
+    <circle cx="930" cy="52" r="4.5" fill="#38bdf8">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="942" y="56" fill="#7dd3fc" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="11.5">Cron: 00 * * * *</text>
+    
+    <!-- Articles Counter -->
+    <rect x="1040" y="38" width="114" height="28" rx="14" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="1052" y="56" fill="#fde047" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="11.5">⚡ 48 Articles/hr</text>
+  </g>
+
+  <!-- PIPELINE WORKFLOW (Top Canvas 330px) -->
+
+  <!-- Curved Connection Wires -->
+  <g id="wires2" stroke-width="3" fill="none">
+    <!-- Cron to HTTP Scraper -->
+    <path d="M 180 185 C 215 185, 215 185, 250 185" stroke="#38bdf8"/>
+    <!-- HTTP to Python Node -->
+    <path d="M 400 185 C 435 185, 435 185, 470 185" stroke="url(#wireA)"/>
+    <!-- Python Node to Gemini AI -->
+    <path d="M 640 185 C 675 185, 675 185, 710 185" stroke="url(#wireB)"/>
+    <!-- Gemini AI to Keyword Extractor -->
+    <path d="M 880 185 C 915 185, 915 185, 950 185" stroke="url(#wireC)"/>
+    <!-- Keyword Extractor to DB Sink (Curved down) -->
+    <path d="M 1030 235 C 1030 275, 1030 285, 1030 320" stroke="url(#wireD)"/>
+  </g>
+
+  <!-- Animated Node Connectors -->
+  <circle cx="215" cy="185" r="4" fill="#38bdf8" filter="url(#glow2)"/>
+  <circle cx="435" cy="185" r="4" fill="#fbbf24" filter="url(#glow2)"/>
+  <circle cx="675" cy="185" r="4" fill="#8b5cf6" filter="url(#glow2)"/>
+  <circle cx="915" cy="185" r="4" fill="#10b981" filter="url(#glow2)"/>
+
+  <!-- NODE 1: Cron / Schedule Trigger -->
+  <g id="node-cron" filter="url(#drop2)">
+    <rect x="40" y="140" width="140" height="90" rx="14" fill="url(#cardGrad2)" stroke="#38bdf8" stroke-width="1.8"/>
+    <rect x="40" y="140" width="140" height="26" rx="14" fill="#38bdf8" fill-opacity="0.15"/>
+    <circle cx="62" cy="173" r="14" fill="url(#nodeCronGrad)"/>
+    <text x="62" y="177" fill="#ffffff" font-size="12" text-anchor="middle">⏱</text>
+    <text x="84" y="169" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="12">Schedule</text>
+    <text x="84" y="183" fill="#7dd3fc" font-family="'Segoe UI', sans-serif" font-weight="500" font-size="10">Cron Trigger</text>
+    <text x="52" y="215" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9.5">Interval: 60 mins</text>
+    <circle cx="180" cy="185" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- NODE 2: HTTP Request / RSS Scraper -->
+  <g id="node-rss" filter="url(#drop2)">
+    <rect x="250" y="140" width="150" height="90" rx="14" fill="url(#cardGrad2)" stroke="#06b6d4" stroke-width="1.8"/>
+    <rect x="250" y="140" width="150" height="26" rx="14" fill="#06b6d4" fill-opacity="0.15"/>
+    <circle cx="272" cy="173" r="14" fill="#06b6d4"/>
+    <text x="272" y="177" fill="#ffffff" font-size="12" text-anchor="middle">📡</text>
+    <text x="294" y="169" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="12">HTTP / RSS</text>
+    <text x="294" y="183" fill="#a5f3fc" font-family="'Segoe UI', sans-serif" font-weight="500" font-size="10">News Feeds</text>
+    <text x="262" y="215" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9.5">Fetch targeted sites</text>
+    <circle cx="250" cy="185" r="5" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="400" cy="185" r="5" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- NODE 3: Python Script (Sanitizer & Body Extractor) -->
+  <g id="node-python" filter="url(#drop2)">
+    <rect x="470" y="130" width="170" height="110" rx="15" fill="#0f172a" stroke="#fbbf24" stroke-width="2"/>
+    <rect x="470" y="130" width="170" height="28" rx="15" fill="url(#nodePythonGrad)" fill-opacity="0.2"/>
+    <circle cx="494" cy="165" r="15" fill="url(#nodePythonGrad)"/>
+    <text x="494" y="170" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="bold">Py</text>
+    <text x="518" y="162" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="12.5">Python Node</text>
+    <text x="518" y="176" fill="#fef08a" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="10">Text Normalizer</text>
+    <text x="484" y="202" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">• Clean HTML &amp; Ads</text>
+    <text x="484" y="218" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">• RegEx Extraction</text>
+    <text x="484" y="232" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">• Payload Packaging</text>
+    <circle cx="470" cy="185" r="5" fill="#fbbf24" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="640" cy="185" r="5" fill="#fbbf24" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- NODE 4: Gemini AI (Summarization) -->
+  <g id="node-ai-sum" filter="url(#drop2)">
+    <rect x="710" y="125" width="170" height="120" rx="16" fill="#0f172a" stroke="#8b5cf6" stroke-width="2.2"/>
+    <rect x="710" y="125" width="170" height="30" rx="16" fill="url(#nodeAiGrad)" fill-opacity="0.25"/>
+    <rect x="710" y="125" width="170" height="120" rx="16" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.3" filter="url(#glow2)"/>
+    <circle cx="736" cy="164" r="16" fill="url(#nodeAiGrad)"/>
+    <text x="736" y="169" fill="#ffffff" font-size="13" text-anchor="middle">✦</text>
+    <text x="760" y="160" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="13">Gemini 1.5 LLM</text>
+    <text x="760" y="175" fill="#ddd6fe" font-family="'Segoe UI', sans-serif" font-weight="600" font-size="10">Summarization Node</text>
+    <text x="724" y="202" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">• 3-Bullet Abstractive</text>
+    <text x="724" y="218" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">• 95% Word Reduction</text>
+    <text x="724" y="234" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">• Sentiment &amp; Topic</text>
+    <circle cx="710" cy="185" r="5" fill="#8b5cf6" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="880" cy="185" r="5" fill="#8b5cf6" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- NODE 5: Keyword & Keyphrase Extractor -->
+  <g id="node-keywords" filter="url(#drop2)">
+    <rect x="950" y="140" width="160" height="95" rx="14" fill="url(#cardGrad2)" stroke="#10b981" stroke-width="1.8"/>
+    <rect x="950" y="140" width="160" height="26" rx="14" fill="#10b981" fill-opacity="0.15"/>
+    <circle cx="974" cy="173" r="14" fill="url(#nodeKeywordGrad)"/>
+    <text x="974" y="177" fill="#ffffff" font-size="11" text-anchor="middle">#</text>
+    <text x="996" y="169" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="12">Keyword Node</text>
+    <text x="996" y="183" fill="#a7f3d0" font-family="'Segoe UI', sans-serif" font-weight="500" font-size="10">Keyphrase Tagger</text>
+    <text x="962" y="208" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9.5">Top 5 Trending Tags</text>
+    <text x="962" y="223" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="9.5">JSON Array Output</text>
+    <circle cx="950" cy="185" r="5" fill="#10b981" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="1030" cy="235" r="5" fill="#10b981" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- NODE 6: Database & Notification Sink (Below Node 5) -->
+  <g id="node-sink" filter="url(#drop2)">
+    <rect x="950" y="320" width="160" height="85" rx="14" fill="url(#cardGrad2)" stroke="#f43f5e" stroke-width="1.8"/>
+    <rect x="950" y="320" width="160" height="26" rx="14" fill="#f43f5e" fill-opacity="0.15"/>
+    <circle cx="974" cy="350" r="14" fill="url(#nodeExportGrad)"/>
+    <text x="974" y="354" fill="#ffffff" font-size="11" text-anchor="middle">💾</text>
+    <text x="996" y="346" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="12">Storage &amp; Alert</text>
+    <text x="996" y="360" fill="#fecdd3" font-family="'Segoe UI', sans-serif" font-weight="500" font-size="10">DB / Sheets / Telegram</text>
+    <text x="962" y="390" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9.5">Insert Structured Record</text>
+    <circle cx="1030" cy="320" r="5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+
+  <!-- BOTTOM PANELS: Python Code Snippet & Live Extracted Summary Preview -->
+
+  <!-- Left: Python Code Snippet -->
+  <g id="code-snippet-panel" filter="url(#drop2)">
+    <rect x="40" y="425" width="410" height="225" rx="14" fill="#090d16" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="40" y="425" width="410" height="32" rx="14" fill="#1e293b" fill-opacity="0.6"/>
+    <!-- Dots -->
+    <circle cx="58" cy="441" r="4.5" fill="#ef4444"/>
+    <circle cx="72" cy="441" r="4.5" fill="#f59e0b"/>
+    <circle cx="86" cy="441" r="4.5" fill="#10b981"/>
+    <text x="105" y="445" fill="#fbbf24" font-family="'Fira Code', monospace" font-size="11" font-weight="600">sanitize_article.py (n8n Node)</text>
+    <text x="390" y="445" fill="#94a3b8" font-family="'Fira Code', monospace" font-size="10">Python 3</text>
+
+    <!-- Code Lines -->
+    <text x="56" y="475" fill="#c084fc" font-family="'Fira Code', monospace" font-size="10.5">import <tspan fill="#e2e8f0">re, json</tspan></text>
+    <text x="56" y="493" fill="#c084fc" font-family="'Fira Code', monospace" font-size="10.5">from <tspan fill="#e2e8f0">bs4</tspan> import <tspan fill="#e2e8f0">BeautifulSoup</tspan></text>
+    <text x="56" y="515" fill="#64748b" font-family="'Fira Code', monospace" font-size="10"># Clean scraped HTML and prepare payload</text>
+    <text x="56" y="533" fill="#38bdf8" font-family="'Fira Code', monospace" font-size="10.5">def <tspan fill="#fde047">clean_news_item</tspan>(raw_html):</text>
+    <text x="75" y="551" fill="#e2e8f0" font-family="'Fira Code', monospace" font-size="10.5">soup = BeautifulSoup(raw_html, <tspan fill="#a7f3d0">'html.parser'</tspan>)</text>
+    <text x="75" y="569" fill="#e2e8f0" font-family="'Fira Code', monospace" font-size="10.5">text = re.sub(<tspan fill="#a7f3d0">r'\s+'</tspan>, <tspan fill="#a7f3d0">' '</tspan>, soup.get_text())</text>
+    <text x="75" y="587" fill="#f43f5e" font-family="'Fira Code', monospace" font-size="10.5">return <tspan fill="#e2e8f0">{</tspan><tspan fill="#a7f3d0">"cleaned_text"</tspan><tspan fill="#e2e8f0">: text[:4000]}</tspan></text>
+    
+    <!-- Footer status -->
+    <rect x="56" y="612" width="378" height="26" rx="8" fill="#131c2e"/>
+    <text x="68" y="629" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="10.5">⚡ Executed in 12ms • Memory: 18MB • Zero Errors</text>
+  </g>
+
+  <!-- Right: Processed News Card & AI Keyphrase Preview -->
+  <g id="summary-preview-card" filter="url(#drop2)">
+    <rect x="470" y="425" width="685" height="225" rx="14" fill="#090d16" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="470" y="425" width="685" height="32" rx="14" fill="#1e293b" fill-opacity="0.6"/>
+    <text x="490" y="445" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="700">📰 Extracted &amp; Summarized Output (Live Sample)</text>
+    <text x="1040" y="445" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="600">● 94% Compressed</text>
+
+    <!-- News Title -->
+    <text x="490" y="478" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="12.5" font-weight="700">"Modern Workflow Automation &amp; AI Integration in 2026 Enterprises"</text>
+    <text x="490" y="495" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10">Source: TechCrunch / RSS • Original length: 2,450 words → AI Summary: 78 words</text>
+
+    <!-- AI 3-Bullet Summary Box -->
+    <rect x="490" y="505" width="645" height="74" rx="10" fill="#0e1726" stroke="#8b5cf6" stroke-width="1.2"/>
+    <text x="506" y="523" fill="#c4b5fd" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="700">✦ AI Generated Bullet Summary:</text>
+    <text x="506" y="541" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="10.5">1. n8n workflows integrated with LLM agents eliminate 85% of manual data routing tasks.</text>
+    <text x="506" y="557" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="10.5">2. Python preprocessing nodes ensure clean JSON payloads before passing data to AI models.</text>
+    <text x="506" y="571" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="10.5">3. Automated keyword extraction categorizes articles for instant CRM &amp; database archiving.</text>
+
+    <!-- Keywords Tag Chips -->
+    <text x="490" y="600" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600">EXTRACTED KEYWORDS &amp; TOPICS:</text>
+    
+    <!-- Chip 1 -->
+    <rect x="490" y="608" width="92" height="24" rx="12" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+    <text x="536" y="624" fill="#a7f3d0" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" text-anchor="middle">#Automation</text>
+    
+    <!-- Chip 2 -->
+    <rect x="590" y="608" width="105" height="24" rx="12" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="642" y="624" fill="#ddd6fe" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" text-anchor="middle">#n8nWorkflow</text>
+
+    <!-- Chip 3 -->
+    <rect x="703" y="608" width="90" height="24" rx="12" fill="#451a03" stroke="#fbbf24" stroke-width="1"/>
+    <text x="748" y="624" fill="#fde047" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" text-anchor="middle">#PythonNLP</text>
+
+    <!-- Chip 4 -->
+    <rect x="801" y="608" width="85" height="24" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1"/>
+    <text x="843" y="624" fill="#bae6fd" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" text-anchor="middle">#GeminiAI</text>
+
+    <!-- Chip 5 -->
+    <rect x="894" y="608" width="100" height="24" rx="12" fill="#4c0519" stroke="#f43f5e" stroke-width="1"/>
+    <text x="944" y="624" fill="#fecdd3" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600" text-anchor="middle">#DataPipeline</text>
+
+    <!-- Archive badge -->
+    <text x="1010" y="624" fill="#34d399" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="600">✓ Saved to Database</text>
+  </g>
+</svg>
